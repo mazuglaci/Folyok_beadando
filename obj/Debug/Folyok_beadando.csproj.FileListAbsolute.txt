@@ -5,3 +5,10 @@ D:\ELTE\Progalap2_beadando\Folyok_beadando\obj\Debug\Folyok_beadando.csprojAssem
 D:\ELTE\Progalap2_beadando\Folyok_beadando\obj\Debug\Folyok_beadando.csproj.CoreCompileInputs.cache
 D:\ELTE\Progalap2_beadando\Folyok_beadando\obj\Debug\Folyok_beadando.exe
 D:\ELTE\Progalap2_beadando\Folyok_beadando\obj\Debug\Folyok_beadando.pdb
+D:\ELTE\Progalap2_beadando\Folyok_beadando\Folyok_beadando\bin\Debug\Folyok_beadando.exe.config
+D:\ELTE\Progalap2_beadando\Folyok_beadando\Folyok_beadando\bin\Debug\Folyok_beadando.exe
+D:\ELTE\Progalap2_beadando\Folyok_beadando\Folyok_beadando\bin\Debug\Folyok_beadando.pdb
+D:\ELTE\Progalap2_beadando\Folyok_beadando\Folyok_beadando\obj\Debug\Folyok_beadando.csprojAssemblyReference.cache
+D:\ELTE\Progalap2_beadando\Folyok_beadando\Folyok_beadando\obj\Debug\Folyok_beadando.csproj.CoreCompileInputs.cache
+D:\ELTE\Progalap2_beadando\Folyok_beadando\Folyok_beadando\obj\Debug\Folyok_beadando.exe
+D:\ELTE\Progalap2_beadando\Folyok_beadando\Folyok_beadando\obj\Debug\Folyok_beadando.pdb
