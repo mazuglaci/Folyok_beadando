@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 namespace Folyok_beadando {
     class Program {
         static void Main(string[] args) {
+            Afeladat.AMegoldas();
+            Console.ReadKey();
         }
     }
 }
