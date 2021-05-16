@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Folyok_beadando
 {
-    class Bfeladat
+    static class Bfeladat
     {
         public static int[] Sorolvas()
         {
@@ -34,28 +34,41 @@ namespace Folyok_beadando
                 to = input[1];
                 rivers[from].SetEnd(rivers[to]);
             }
-            SortedSet<int> tovabbFolyok = rivers[x].Leszarmazott();
-            SortedSet<int> beleFolyok = new SortedSet<int>();
-            rivers[x].Osszefolyike(ref beleFolyok);
-
-            Console.WriteLine();
-            Console.WriteLine($"{beleFolyok.Count} {string.Join(" ", beleFolyok)}");
-            Console.WriteLine($"{tovabbFolyok.Count} {string.Join(" ", tovabbFolyok)}");
-            Console.WriteLine();
+            //x. leszármazottai
+            //y. leszármazottai
+            //mi az első közös
+            //első = -1 => "NEM"
+            //különben indexof()+1 => hányadik X listája
+            //                          hányadik y listája
         }
-        private static void Osszefolyike(this River river)
+
+        private static List<int> Leszarmazott(this River eredeti)
         {
-            foreach (River os in river.ContainedRivers)
+            List<int> ret = new List<int>();
+            River vizsgalt = eredeti;
+            while (vizsgalt.HasEndRiver)
             {
-                
+                vizsgalt = vizsgalt.EndRiver;
+                ret.Add(vizsgalt.ID);
             }
-        }
-
-        private static SortedSet<int> Leszarmazott(this River river)
-        {
-            SortedSet<int> ret = new SortedSet<int>();
 
             return ret;
+        }
+        private static int Elsokozos(List<int> elso, List<int> masodik)
+        {
+            int i = 0;
+            while (i < elso.Count && !masodik.Contains(elso[i])) 
+            {
+                i++;
+            }
+            if (i < elso.Count)
+            {
+                return elso[i];
+            }
+            else 
+            {
+                return -1;
+            }
         }
     }
 }
