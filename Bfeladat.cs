@@ -34,6 +34,28 @@ namespace Folyok_beadando
                 to = input[1];
                 rivers[from].SetEnd(rivers[to]);
             }
+            SortedSet<int> tovabbFolyok = rivers[x].Leszarmazott();
+            SortedSet<int> beleFolyok = new SortedSet<int>();
+            rivers[x].Osszefolyike(ref beleFolyok);
+
+            Console.WriteLine();
+            Console.WriteLine($"{beleFolyok.Count} {string.Join(" ", beleFolyok)}");
+            Console.WriteLine($"{tovabbFolyok.Count} {string.Join(" ", tovabbFolyok)}");
+            Console.WriteLine();
+        }
+        private static void Osszefolyike(this River river)
+        {
+            foreach (River os in river.ContainedRivers)
+            {
+                
+            }
+        }
+
+        private static SortedSet<int> Leszarmazott(this River river)
+        {
+            SortedSet<int> ret = new SortedSet<int>();
+
+            return ret;
         }
     }
 }
