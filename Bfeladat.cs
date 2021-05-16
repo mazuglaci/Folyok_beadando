@@ -13,13 +13,14 @@ namespace Folyok_beadando
             return Console.ReadLine().Split(' ').Select(s => int.Parse(s)).ToArray();
         }
 
-        public static void AMegoldas()
+        public static void BMegoldas()
         {
-            int n, m, f;
+            int n, m, x, y;
             int[] input = Sorolvas();
             n = input[0];
             m = input[1];
-            f = input[2];
+            x = input[2];
+            y = input[3];
             River[] rivers = new River[n + 1];
             for (int i = 1; i <= n; i++)
             {
@@ -34,5 +35,16 @@ namespace Folyok_beadando
                 rivers[from].SetEnd(rivers[to]);
             }
         }
-        }
+    }
 }
+
+/*
+6 4 6 5
+1 2
+3 4
+4 5
+3 6
+
+IGEN
+1 2
+*/

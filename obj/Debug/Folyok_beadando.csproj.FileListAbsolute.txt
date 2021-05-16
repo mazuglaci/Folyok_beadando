@@ -12,3 +12,9 @@ D:\ELTE\Progalap2_beadando\Folyok_beadando\Folyok_beadando\obj\Debug\Folyok_bead
 D:\ELTE\Progalap2_beadando\Folyok_beadando\Folyok_beadando\obj\Debug\Folyok_beadando.csproj.CoreCompileInputs.cache
 D:\ELTE\Progalap2_beadando\Folyok_beadando\Folyok_beadando\obj\Debug\Folyok_beadando.exe
 D:\ELTE\Progalap2_beadando\Folyok_beadando\Folyok_beadando\obj\Debug\Folyok_beadando.pdb
+C:\Users\Zsizsi\Documents\GitHub\Folyok_beadando\bin\Debug\Folyok_beadando.exe.config
+C:\Users\Zsizsi\Documents\GitHub\Folyok_beadando\bin\Debug\Folyok_beadando.exe
+C:\Users\Zsizsi\Documents\GitHub\Folyok_beadando\bin\Debug\Folyok_beadando.pdb
+C:\Users\Zsizsi\Documents\GitHub\Folyok_beadando\obj\Debug\Folyok_beadando.csprojAssemblyReference.cache
+C:\Users\Zsizsi\Documents\GitHub\Folyok_beadando\obj\Debug\Folyok_beadando.exe
+C:\Users\Zsizsi\Documents\GitHub\Folyok_beadando\obj\Debug\Folyok_beadando.pdb

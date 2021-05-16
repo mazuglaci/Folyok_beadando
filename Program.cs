@@ -8,6 +8,7 @@ namespace Folyok_beadando {
     class Program {
         static void Main(string[] args) {
             Afeladat.AMegoldas();
+            Bfeladat.BMegoldas();
             Console.ReadKey();
         }
     }
