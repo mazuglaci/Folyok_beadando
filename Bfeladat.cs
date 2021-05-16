@@ -34,14 +34,22 @@ namespace Folyok_beadando
                 to = input[1];
                 rivers[from].SetEnd(rivers[to]);
             }
-            //x. leszármazottai
-            //y. leszármazottai
-            //mi az első közös
+            List<int> elso = new List<int>();             //x. leszármazottai
+            Console.WriteLine(elso);
+            List<int> masodik = new List<int>();            //y. leszármazottai
+            Console.WriteLine(masodik);
+            Console.WriteLine(elso[x]);            //mi az első közös
             //első = -1 => "NEM"
-            //különben indexof()+1 => hányadik X listája
-            //                          hányadik y listája
+            if (elso[x].Elsokozos(elso) = -1)
+            { Console.WriteLine("NEM"); }
+            else
+            {elso.IndexOf(elso) + 1; //indexof()+1 --> hányadik x listája
+             masodik.IndexOf(masodik) + 1; //indexof()+1 --> hányadik y listája 
+            }
+
         }
 
+        //a folyók leszármazottainak megadása
         private static List<int> Leszarmazott(this River eredeti)
         {
             List<int> ret = new List<int>();
@@ -54,6 +62,7 @@ namespace Folyok_beadando
 
             return ret;
         }
+        //első közös leszármazott megadása
         private static int Elsokozos(List<int> elso, List<int> masodik)
         {
             int i = 0;
