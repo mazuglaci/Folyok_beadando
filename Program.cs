@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace Folyok_beadando {
     class Program {
         static void Main(string[] args) {
-            //Afeladat.AMegoldas();
+            Console.WriteLine("Első feladat megoldása: ");
+            Afeladat.AMegoldas();
+            Console.WriteLine("Második feladat megoldása: ");
             Bfeladat.BMegoldas();
             Console.ReadKey();
         }
