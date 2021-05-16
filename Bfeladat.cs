@@ -30,21 +30,22 @@ namespace Folyok_beadando
             for (int i = 0; i < m; i++)
             {
                 input = Sorolvas();
-                from = input[0];
-                to = input[1];
+                from = input[1];
+                to = input[0];
                 rivers[from].SetEnd(rivers[to]);
             }
-            List<int> elso = new List<int>();             //x. leszármazottai
-            Console.WriteLine(elso);
-            List<int> masodik = new List<int>();            //y. leszármazottai
-            Console.WriteLine(masodik);
-            Console.WriteLine(elso[x]);            //mi az első közös
-            //első = -1 => "NEM"
-            if (elso[x].Elsokozos(elso) = -1)
+            List<int> elso = rivers[x].Leszarmazott();             //x. leszármazottai
+            //Console.WriteLine(string.Join(" ",elso));
+            List<int> masodik = rivers[y].Leszarmazott();            //y. leszármazottai
+            //Console.WriteLine(string.Join(" ",masodik));
+            int kozos = Elsokozos(elso, masodik);
+            //Console.WriteLine(kozos);            //mi az első közös
+            if (kozos == -1)
             { Console.WriteLine("NEM"); }
             else
-            {elso.IndexOf(elso) + 1; //indexof()+1 --> hányadik x listája
-             masodik.IndexOf(masodik) + 1; //indexof()+1 --> hányadik y listája 
+            {
+                Console.WriteLine("IGEN");
+                Console.WriteLine((elso.IndexOf(kozos)+1)+" "+(masodik.IndexOf(kozos)+1));
             }
 
         }
